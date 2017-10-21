@@ -29,22 +29,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rzz-q0-rsj">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rzz-q0-rsj">
                                 <rect key="frame" x="0.0" y="70" width="375" height="533"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="CYD-JK-i4V" customClass="CategoryCell" customModule="coder_sway" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="140" id="CYD-JK-i4V" customClass="CategoryCell" customModule="coder_sway" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CYD-JK-i4V" id="DuZ-HF-GgV">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="TDA-co-cj1">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="140"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="139.5" id="0V6-Wl-0L6"/>
+                                                        <constraint firstAttribute="width" constant="375" id="SqW-W5-h26"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qu-XS-MLM">
-                                                    <rect key="frame" x="108" y="55.5" width="159" height="29"/>
+                                                    <rect key="frame" x="108" y="58.5" width="159" height="29"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="29" id="hAq-U1-27X"/>
                                                         <constraint firstAttribute="width" constant="159" id="tUK-Bk-Xgh"/>
@@ -56,10 +60,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="9Qu-XS-MLM" firstAttribute="centerX" secondItem="DuZ-HF-GgV" secondAttribute="centerX" id="8DL-I7-DJh"/>
-                                                <constraint firstItem="TDA-co-cj1" firstAttribute="top" secondItem="DuZ-HF-GgV" secondAttribute="top" id="BYZ-PG-yMN"/>
+                                                <constraint firstItem="TDA-co-cj1" firstAttribute="centerY" secondItem="DuZ-HF-GgV" secondAttribute="centerY" id="Ajj-7N-rc8"/>
+                                                <constraint firstItem="TDA-co-cj1" firstAttribute="top" secondItem="DuZ-HF-GgV" secondAttribute="top" constant="3" id="BYZ-PG-yMN"/>
                                                 <constraint firstAttribute="trailing" secondItem="TDA-co-cj1" secondAttribute="trailing" id="M7A-Xj-CFY"/>
                                                 <constraint firstItem="9Qu-XS-MLM" firstAttribute="centerY" secondItem="DuZ-HF-GgV" secondAttribute="centerY" id="T19-Un-cto"/>
-                                                <constraint firstAttribute="bottom" secondItem="TDA-co-cj1" secondAttribute="bottom" id="e4P-A0-3v5"/>
+                                                <constraint firstAttribute="bottom" secondItem="TDA-co-cj1" secondAttribute="bottom" constant="3" id="e4P-A0-3v5"/>
                                                 <constraint firstItem="TDA-co-cj1" firstAttribute="leading" secondItem="DuZ-HF-GgV" secondAttribute="leading" id="hPa-f7-iu2"/>
                                             </constraints>
                                         </tableViewCellContentView>
